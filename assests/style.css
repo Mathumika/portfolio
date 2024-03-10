@@ -1,0 +1,171 @@
+
+
+
+
+body {
+    font-family: 'Inconsolata', Arial, sans-serif; 
+    background-color: #292929; 
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.top-left {
+    position: absolute;
+    top: 15px;
+    left: 40px;
+    font-size: 24px;
+    color: #ff0303; /* Red color */
+}
+nav {
+    position: fixed; /* Fixed positioning */
+    top: 20px;  /* Distance from the top */
+    right: 40px;
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: none; /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline-block; /* Display items horizontally */
+    margin-left: 10px; /* Adjust spacing between items */
+}
+
+a {
+    text-decoration: none; /* Remove underline from links */
+    color: #fd0404; /* Link color */
+    padding: 5px 10px; /* Add padding to links */
+    border: 0px solid #fd0101; 
+    font-size: larger;
+    border-radius:5px; /* Round the corners of links */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition effect */
+}
+
+a:hover {
+    background-color: #ff0606; /* Background color on hover */
+    color: #fff; /* Text color on hover */
+}
+body {
+    font-family: 'Inconsolata' Arial, sans-serif;
+    background-color: #292929;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Set the height of the body to full viewport height */
+}
+
+.black-box {
+    width: 1200px; /* Adjust width as needed */
+    height: 390px; /* Adjust height as needed */
+    background-color: #000000; /* Black background color */
+    border: 1px solid #ff0000; /* Red border */
+    border-radius: 10px; /* Rounded corners */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    position: absolute;
+    top: 155px; /* Adjust the distance from the top as needed */
+    left: 150px; /* Adjust the distance from the left as needed */
+    padding: 10px;
+    font-size: 35px;
+    font-weight:bold ;
+    color: #fff;
+    border-radius: 5px;
+}
+.ui {
+    position: absolute;
+    top: 210px; /* Adjust the distance from the top as needed */
+    left: 150px; /* Adjust the distance from the left as needed */
+    padding: 10px;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 5px;
+}
+.ux {
+    position: absolute;
+    top: 260px; /* Adjust the distance from the top as needed */
+    left: 160px; /* Adjust the distance from the left as needed */
+    width: 500px; /* Adjust the width as needed */
+    padding: 0px;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 5px;
+    height: auto; /* Automatically adjust the height based on content */
+    line-height: 1.5; /* Set the line height to control spacing between lines */
+}
+
+
+
+/* CSS for the image box */
+/* Existing CSS code */
+
+.box {
+    position: absolute ; /* Change position to relative */
+    padding: 10px;
+    font-size: 35px;
+    font-weight:bold ;
+    color: #fff;
+    border-radius: 5px;
+    text-align: left; /* Center align text */
+}
+
+.image-box img {
+    position: absolute; /* Position the image absolutely */
+    top: 50%; /* Position the image vertically at the center of the box */
+    left: 50%;
+    border-radius: 30px; /* Position the image horizontally at the center of the box */
+    transform: translate(100%, -50%); /* Adjust image position to center it properly */
+    max-width: 50%; /* Ensure the image does not exceed the width of the box */
+    max-height: 50%; /* Ensure the image does not exceed the height of the box */
+}
+.custom-button {
+    background-color: #fff; /* White background */
+    color: #ff0000; /* Red text color */
+    border: 1px solid #ff0000; /* Red border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Adjust padding as needed */
+    font-size: 16px; /* Adjust font size as needed */
+    cursor: pointer; /* Show pointer cursor */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Smooth transition effect */
+    position: absolute;
+    top: 50%; /* Position the button at 50% from the top of the nearest positioned ancestor */
+    left: 50%; /* Position the button at 50% from the left of the nearest positioned ancestor */
+    transform: translate(-350%, 230%); /* Center the button horizontally and vertically */
+}
+
+
+.custom-button:hover {
+    background-color: #ff0000; /* Red background on hover */
+    color: #fff; /* White text color on hover */
+    border-color: #fc0202; /* White border color on hover */
+}
+.button {
+    background-color: #fff; /* White background */
+    color: #ff0000; /* Red text color */
+    border: 1px solid #ff0000; /* Red border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Adjust padding as needed */
+    font-size: 16px; /* Adjust font size as needed */
+    cursor: pointer; /* Show pointer cursor */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Smooth transition effect */
+    position: absolute;
+    top: 50%; /* Position the button at 50% from the top of the nearest positioned ancestor */
+    left: 50%; /* Position the button at 50% from the left of the nearest positioned ancestor */
+    transform: translate(-320%, 230%); /* Center the button horizontally and vertically */
+}
+
+
+.button:hover {
+    background-color: #ff0000; /* Red background on hover */
+    color: #fff; /* White text color on hover */
+    border-color: #fc0202; /* White border color on hover */
+}
+
