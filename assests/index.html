@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap">
+    <link rel="stylesheet" href="/assests/style.css">
+</head>
+
+<head>
+    <title>Mathumika</title>
+    <link rel="icon" href="/assests/images/profile.jpeg">
+</head>
+
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+        
+            <ul id="sidemenu">
+                <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT ME</a></li>
+        <li><a href="skills.html">MY SKILLS</a></li>
+        <li><a href="projects.html">PROJECTS</a></li>
+        <li><a href="contact.html">CONTACT ME</a></li>
+                
+            </ul>
+             
+        </nav>
+        <div class="header-text">
+           
+            <h1>Hi, I'm <span> Madhumika K </span><br>Frontend Developer / UI/UX Designer / Web Developer</h1>
+        </div>
+    </div>
+</div>
+<!-------------about---------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/profile.jpeg">
+            </div>
+
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p id="mypara">As a driven professional with a background in civil engineering and a keen interest in the IT sector, I merge technical prowess with innovative solutions. With a deep-rooted foundation in technology and a commitment to innovation, I push boundaries to drive impactful advancements. Focused on professional growth and staying updated on industry trends, I make significant contributions to the ever-evolving landscape of technology.</p>
+
+                    <div class="tab-contents" id="Soft-Skills">
+                        <ul>
+                            <li>Adaptability</li>
+                            <li>Team Work and Collaboration</li>
+                            <li>Leadership Skills</li>
+                            <li>Work Ethic</li>
+                        
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2015-2016</span><br>SSLC-94.8%</li>
+                            <li><span>2016-2018</span><br>HSC-83.3%</li>
+                            <li><span>2018-2022</span><br>B.E CSE-86%</li>
+                            <li><span>2022-2024</span><br>M.E CSE-75%</li>
+                        </ul>
+                    </div>
+            </div>
+    </div>
+</div>
+</div>
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My skills</h1>  
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/work1.png">
+
+                <div class="layer">
+                    <h3>Sketching</h3>
+                    <p>It allows me to express my creativity freely and capture the beauty of the world around
+                         me with just a pen and paper</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/work2.png">
+                <div class="layer">
+                <h3>Cooking</h3>
+                <p>It's a delightful blend of artistry and
+                     science, where I can experiment with flavors.A therapeutic
+                      escape that nourishes both body and soul.</p>
+            </div>
+            </div>
+            <div class="work">
+                <img src="Images/work3.png">
+                <div class="layer">
+                <h3>Gardening</h3>
+                    <p>Tending to plants brings me joy and fulfillment as I witness
+                         the growth and beauty that flourish under my care</p>
+            </div>
+        </div>
+        </div>
+<a href="#" class="btn">Back to Home</a>
+    </div>
+</div>
+<!----------------------------Contact--------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><img src="Images/mail.png" >aarathyrhea63@gmail.com</p>
+                <p><img src="Images/phn.png">6369203743</p>
+                <div class="social-icons">
+                <a href="http://facebook.com"> <img src="Images/fb.png" ></a>
+                <a href="http://instagram.com"> <img src="Images/ig.png" ></a>
+                <a href="http://linkedin.in"> <img src="Images/in.png" ></a>
+                </div>
+                <a href="Images/mycv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+        </div>
+    </div>
+</div>
+
+<div class="copyright">
+    <p>Copyright © <span> AarathyRhea.</span> Made with <span> ♡</span> </p>
+</div>
+</div>
+
+<script>
+
+var tablinks= document.getElementsByClassName("tab-links");
+var tabcontents= document.getElementsByClassName("tab-contents");
+
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+    
+
+}
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+sidemenu.style.right="0";
+    } 
+    function closemenu(){
+sidemenu.style.right="-200px";
+    } 
+    
+</script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwVGZV1fvHjHZ-_7_5Lx_kIAG8TqK_6dVv_BtpgAma5Xf-wCIXA5CNjXkj0Hdlx1J6thw/exec'
+  const form = document.forms['submit-to-google-sheet']
+const msg = document.getElementById("msg")
+  
+form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML="Message Sent Successfully"
+        setTimeout(function()
+        {
+            msg.innerHTML = ""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+
+</body>
+</html>
